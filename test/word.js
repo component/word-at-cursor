@@ -37,7 +37,7 @@ describe('word()', function() {
   it('should not include punctuation', function() {
     selectAt(el, 'i');
     var range = word();
-    assert('hi' == range.toString());
+    assert('hi!' == range.toString());
     assert(range.endContainer == range.startContainer);
     assert('hi!' == range.startContainer.textContent.slice(0, 3));
     assert('s' == range.endContainer.textContent.slice(-1));
@@ -46,10 +46,10 @@ describe('word()', function() {
   it('should span textnodes and element nodes', function() {
     selectAt(el.querySelector('em'), 'l');
     var range = word();
-    assert('sally' == range.toString());
+    assert('sally.' == range.toString());
     assert(range.endContainer != range.startContainer);
     assert('hi!' == range.startContainer.textContent.slice(0, 3));
-    assert('y' == range.endContainer.textContent);
+    assert('.' == range.endContainer.textContent);
   })
 
 })

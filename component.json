@@ -4,7 +4,9 @@
   "description": "get the current word at the cursor",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "matthewmueller/character-iterator": "0.0.5"
+  },
   "development": {
     "component/domify": "*",
     "component/assert": "*"
