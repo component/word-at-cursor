@@ -20,9 +20,9 @@ range.endContainer // end node
 
 ## API
 
-### `word()`
+### `word([root])`
 
-Get the word at the cursor. Returns a [range](https://developer.mozilla.org/en-US/docs/Web/API/range).
+Get the word at the cursor. Returns a [range](https://developer.mozilla.org/en-US/docs/Web/API/range). Optionally add a `root` element that the word will not extend outside of.
 
 ## Test
 
