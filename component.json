@@ -2,7 +2,7 @@
   "name": "word-at-cursor",
   "repo": "component/word-at-cursor",
   "description": "get the current word at the cursor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "dependencies": {
     "matthewmueller/character-iterator": "0.1.0"
