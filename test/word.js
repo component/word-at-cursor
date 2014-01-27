@@ -52,6 +52,15 @@ describe('word()', function() {
     assert('.' == range.endContainer.textContent);
   })
 
+  it('should support a root', function() {
+    selectAt(el.querySelector('em'), 'l');
+    var range = word(el.querySelector('strong'));
+    assert('ally' == range.toString());
+    assert(range.endContainer != range.startContainer);
+    assert('a' == range.startContainer.textContent);
+    assert('y' == range.endContainer.textContent);
+  })
+
 })
 
 /**

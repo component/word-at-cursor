@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "matthewmueller/character-iterator": "0.0.5"
+    "matthewmueller/character-iterator": "0.1.0"
   },
   "development": {
     "component/domify": "*",
